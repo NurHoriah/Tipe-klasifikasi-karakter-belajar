@@ -2,14 +2,14 @@
   "name": "tipe-karakter-belajar",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://nurhoriah.github.io/Tipe-Klasifikasi-Karakter-Belajar",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next export",
-    "predeploy": "npm run build && npm run export",
-    "deploy": "npm run predeploy && git add . && git commit -m \"🚀 Deploy to GitHub Pages\" && git push origin main"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
@@ -72,6 +72,7 @@
     "postcss": "^8.5.0",
     "tailwindcss": "^4.1.9",
     "tw-animate-css": "1.3.3",
-    "typescript": "^5.0.0"
+    "typescript": "^5.0.0",
+    "gh-pages": "^6.2.0"
   }
 }
